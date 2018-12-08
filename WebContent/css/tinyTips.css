@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+
+
+h1								{ text-align: center; line-height: 15px; padding: 0px 0px 20px 0px; letter-spacing: -2px; }
+h1.massive						{ font-size: 72px; line-height: 10px; padding: 0px; letter-spacing: -6px; color: #f4c20a; }
+#demo_wrapper					{ width: 600px; margin: 30px auto 0px auto; }
+
+.tinyTip						{ width:200px; display: block; background:url(../images/tinyTip-bq.png) no-repeat 0 center; }
+.tinyTip .top{ padding-top:15px; background:url(../images/tinyTip-top.png) no-repeat 0 0;}
+.tinyTip .content				{ padding:0 15px 0 47px; background: url(../images/tinyTip-content.png) 0px 0px repeat-y; font-size: 14px; font-family: "Lucida Sans Unicode"; color: #010101;}
+.tinyTip .bottom				{ padding-bottom:15px; background: url(../images/tinyTip-bottom.png) 0 bottom no-repeat;}

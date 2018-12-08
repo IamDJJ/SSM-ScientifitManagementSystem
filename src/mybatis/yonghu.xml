@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!--这个namespace + 下面的id 就是一个完整的路径，在dao层我们写了完整的路径之后mybatis就是映射这个文件中的相关sql语句 -->
+<mapper namespace="com.yonghu">
+<!-- parameterType就是你接受的参数的类型，  -->
+<!-- 添加用户信息 -->
+<insert id="insertyonghu"  parameterType="java.util.Map">
+ insert  into  yonghu(yhm,mm,xm,xy,QQ,dh,xb,nl)  values(#{yhm},#{mm},#{xm},#{xy},#{QQ},#{dh},#{xb},#{nl})
+</insert>
+
+<delete id="delyonghu" parameterType="int">
+ delete  from  yonghu where yhid=#{yhid}
+</delete>
+
+<update id="updateyonghu" parameterType="java.util.Map">
+update yonghu set yhm=#{yhm},mm=#{mm},xm=#{xm},xy=#{xy},QQ=#{QQ},dh=#{dh},xb=#{xb},nl=#{nl} where yhid=#{yhid}
+</update>
+
+<!--  查询返回的是 list<map> -->
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectyonghu"  parameterType="int" resultType="java.util.Map">
+  select  * from yonghu where yhid=#{yhid}
+</select>
+
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectall"  parameterType="java.util.Map" resultType="java.util.Map">
+  select  * from yonghu where 1=1
+</select>
+
+</mapper>

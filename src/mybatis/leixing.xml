@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!--这个namespace + 下面的id 就是一个完整的路径，在dao层我们写了完整的路径之后mybatis就是映射这个文件中的相关sql语句 -->
+<mapper namespace="com.leixing">
+<!-- parameterType就是你接受的参数的类型，  -->
+<!-- 添加用户信息 -->
+<insert id="insertleixing"  parameterType="java.util.Map">
+ insert  into  leixing(lx)  values(#{lx})
+</insert>
+
+<delete id="delleixing" parameterType="int">
+ delete  from  leixing where lxid=#{lxid}
+</delete>
+
+<update id="updateleixing" parameterType="java.util.Map">
+update leixing set lx=#{lx} where lxid=#{lxid}
+</update>
+
+<!--  查询返回的是 list<map> -->
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectleixing"  parameterType="int" resultType="java.util.Map">
+  select  * from leixing where lxid=#{lxid}
+</select>
+
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectall"  parameterType="java.util.Map" resultType="java.util.Map">
+  select  * from leixing where 1=1
+</select>
+
+</mapper>

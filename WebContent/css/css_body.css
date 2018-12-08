@@ -1,0 +1,391 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding-right: 12px;
+	padding-left: 12px;
+	_padding-right: 24px;
+	overflow-x: hidden;
+	padding-bottom: 10px;
+	background-image: url(../images/pbg.gif);
+	background-repeat: repeat-x;
+	line-height: 20px;
+}
+
+html{
+_overflow-x: hidden;
+}
+
+*{
+	padding:0px;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+input{
+	border-width:1px;
+	border:1px solid #CCC;
+	padding:3px 0 3px 5px;
+}
+
+input[type=image]{ border:none }
+input[type=checkbox]{ border:none }
+input[type=radio]{ border:none }
+.ncbox{}
+
+.np{ border:0px; } 
+
+img{
+	border:0px;
+}
+.line10 {
+	font-size: 0px;
+	line-height: 0px;
+	height: 10px;
+	clear: both;
+}
+.clear {
+	font-size: 0px;
+	line-height: 0px;
+	clear: both;
+}
+
+a{
+	color:#006699;
+	text-decoration: none;
+}
+a:hover{
+	color:#F00;
+	text-decoration:underline;
+}
+
+.bodytitle{
+	height:28px;
+	background:url(../images/dede_biz_admin_bbg.jpg) top left repeat-x;
+	clear:both;
+	overflow:hidden;
+	margin-top: 8px;
+	line-height: 28px;
+}
+.bodytitleleft{
+	height:28px;
+	display:block;
+	background:#000;
+	float:right;
+	background:url(../images/dede_biz_admin_brbg.jpg) top right no-repeat;
+	padding-right: 4px;
+}
+.bodytitletxt{
+	display:block;
+	height:28px;
+	display:block;
+	float:left;
+	text-indent:16px;
+	line-height:28px;
+	letter-spacing:1px;
+	font-weight:bold;
+	color:#fff;
+	background:url(../images/dede_biz_admin_blbg.jpg) top left no-repeat;
+	font-size: 14px;
+}
+.tbtitle{
+	height:27px;
+	margin:8px auto 0px auto;
+	line-height:27px;
+	letter-spacing:1px;
+}
+.tbtitle .tbtitletxt{
+	text-indent:20px;
+}
+.tblist{
+	background:#cad9ea;
+	margin-left:auto;
+	margin-right:auto;
+}
+.tblist2{
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid #cad9ea;
+	border-right:1px solid #cad9ea;
+	border-bottom:1px solid #cad9ea;
+}
+
+.tblist td{
+	background:#FFFFFF;
+	padding:6px;
+}
+.tblist td.tbsname{
+	background:#f5fafe;
+	padding:6px;
+}
+.inputbut{
+	padding-left:3px;
+	padding-right:2px;
+	border:1px solid #999;
+	background:#FFF url(../images/inputbut_bg.gif) left center repeat-x;
+	font-size:12px;
+	height:24px;
+	padding-top:2px;
+	letter-spacing:2px;
+	vertical-align:middle;
+	margin-bottom:6px;
+}
+.inputbutx{
+	padding-left:3px;
+	padding-right:2px;
+	border:1px solid #999;
+	background:#FFF url(../images/inputbut_bg.gif) left center repeat-x;
+	font-size:12px;
+	height:20px;
+	letter-spacing:2px;
+	vertical-align:middle;
+	text-decoration: none;
+	line-height: 20px;
+	padding-top: 2px;
+}
+.trlbg td{
+	background:#e8f3fd;
+}
+.hg {
+line-height: 20px;
+}
+
+.dlg {
+	border: 2px solid #749F4D;
+	background-color: #F0FAEB;
+	padding: 2px;
+	width: 200px;
+	line-height:160%;
+}
+
+.dlgTesttitle {
+	border: 2px solid #749F4D;
+	background-color: #F0FAEB;
+	padding: 2px;
+	width: 200px;
+	line-height:150%;
+}
+
+.dlg2 {
+	border: 2px solid #749F4D;
+	background-color: #F0FAEB;
+	padding: 2px;
+	width: 380px;
+	line-height:160%;
+}
+
+.data {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #cad9ea;
+	border-bottom-color: #cad9ea;
+	border-left-color: #cad9ea;
+}
+
+.dedePagelist a
+{
+	border:1px;
+	border:1px solid #CCC;
+	margin-right:3px;
+	text-decoration:none;
+	color:#006699;
+	padding:1px 2px 1px 2px;
+	letter-spacing:0px
+}
+
+.bline {
+  border-bottom: 1px dotted #BCD0B5;
+  background-color: #FFFFFF;
+}
+.txtbox1 {
+	padding-top: 8px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+}
+.txtbox1 p {
+	line-height: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.txtbox1 p.red {
+	color: #ff0000;
+}
+.txtbox1 p strong.red {
+	color: #ff0000;
+}
+.txtbox1 small {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #c4d2d7;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+
+.main_dnews{
+	padding:10px 0px 5px 100px;
+	background:url(../images/mico_1.gif) 10px 20px no-repeat;
+	line-height:31px;
+}
+.main_dnews a{
+	color:#FF3300;
+}
+
+.main_qbut div{
+	width:100px;
+	background:url(../images/mico_l.gif) no-repeat;
+	margin:0px auto;
+}
+.main_qbut div a{
+	display:block;
+	width:100px;
+	height:24px;
+	padding-top:84px;
+	color: #006699;
+	text-decoration: none;
+}
+.main_qbut div a:hover{
+	background:url(../images/mb_bg.gif) no-repeat;
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.main_bleft{
+	line-height:29px;
+	padding-right:10px;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#006699;
+}
+.main_bright{
+	line-height:29px;
+	padding-left:12px;
+}
+.main_link {
+	line-height: 22px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+}
+.main_link p {
+	line-height: 24px;
+}
+
+.main_link big {
+	font-family: "宋体";
+	color: #006699;
+	font-size: 12px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+.main_link big a{
+	font-family: "宋体";
+}
+.main_link small {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #cad9ea;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+
+
+.coolbg4 {
+  height:20px;
+  width:200px;
+  border-bottom: 1px solid #C9CFC1;
+  background-color: #EDEBE5;
+  text-align:right;
+  margin-bottom:3px;
+}
+
+#_mysource{
+  line-height:150%;
+  padding-left:5px;
+  padding-right:2px;
+}
+
+.option1{ background-color: #DCECA6; }
+.option2{ background-color: #F7FBD2; }
+.option3{ background-color: #FFFFFF; }
+
+#head1{
+border-bottom:1px solid #cad9ea;
+}
+
+#head2{
+border-bottom:1px solid #cad9ea;
+}
+
+.ct_td{
+  padding:3px;
+  padding-left:6px;
+}
+.tab_bk1 {
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #cad9ea;
+}
+.shwobox1 {
+	position: absolute;
+	width: 485px;
+	background-color: #f5fafe;
+	top: 0px;
+	right: 3px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #c8d2d5;
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #c8d2d5;
+	z-index: 9;
+	zoom:1;
+}
+.shwobox1 .box {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #4294ce;
+	border-bottom-color: #4294ce;
+	border-left-color: #4294ce;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+}
+.shwobox1 .box dl {
+	float: left;
+	width: 100px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.shwobox1 .box dl dt {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: bold;
+	height: 30px;
+}
+.shwobox1 .box dd a {
+	color: #333;
+}
+.shwobox1 .box dd a:hover {
+	color: #f00;
+}
+
+
+.shwobox1 .box em {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	height: 17px;
+	width: 17px;
+	cursor: pointer;
+	z-index: 99;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!--这个namespace + 下面的id 就是一个完整的路径，在dao层我们写了完整的路径之后mybatis就是映射这个文件中的相关sql语句 -->
+<mapper namespace="com.xiangmu">
+<!-- parameterType就是你接受的参数的类型，  -->
+<!-- 添加用户信息 -->
+<insert id="insertxiangmu"  parameterType="java.util.Map">
+ insert  into  xiangmu(xmmc,fzr,xmjd,gs,lxsj,js,yh,zt,fj)  values(#{xmmc},#{fzr},#{xmjd},#{gs},#{lxsj},#{js},#{yh},#{zt},#{fj})
+</insert>
+
+<delete id="delxiangmu" parameterType="int">
+ delete  from  xiangmu where xmid=#{xmid}
+</delete>
+
+<update id="updatexiangmu" parameterType="java.util.Map">
+update xiangmu set xmmc=#{xmmc},fzr=#{fzr},xmjd=#{xmjd},gs=#{gs},lxsj=#{lxsj},js=#{js},yh=#{yh},zt=#{zt},fj=#{fj} where xmid=#{xmid}
+</update>
+
+<!--  查询返回的是 list<map> -->
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectxiangmu"  parameterType="int" resultType="java.util.Map">
+  select  * from xiangmu where xmid=#{xmid}
+</select>
+
+<!-- resultType 就是返回查询结果的类型，而如果是resultMap=则返回的就是你定义的javabean  -->
+<select  id="selectall"  parameterType="java.util.Map" resultType="java.util.Map">
+  select  * from xiangmu where 1=1
+   <if test=" null != yhm">
+            and yh = #{yhm}
+        </if>
+        
+    
+      <if test=" null != htmc">
+            and htbt like "%"#{htmc}"%" 
+        </if>
+        
+          <if test=" null != xmmc">
+            and xmmc like "%"#{xmmc}"%" 
+        </if>
+</select>
+
+</mapper>
