@@ -86,7 +86,7 @@ Upgrade jquery to version 3.5.0 or later.
 所以这次重构项目，将其更新为spring boot + jsp + jdk 11，更改为maven管理
 重构的好处：
 1. 以前的SSM项目，需要tomcat容器承载，需要配置文件配置，看起来太笨重，部署起来也很笨重，完全不轻量化。
-2. spring boot的好处，自带tomcat，再也不用担心tomcat配置问题和tomcat版本问题而烦恼了，项目可以不重度依赖配置文件，注解化开发更方便项目查看。
+2. spring boot的好处，自带tomcat，再也不用担心tomcat配置问题和tomcat版本问题而烦恼了，项目可以不重度依赖配置文件，注解化开发更方便项目维护。
 3. maven管理项目，可以更方便的注入依赖包，比如需要什么工具只需要在maven下载，省去很多繁琐的创建依赖过程。
 
 项目地址：
