@@ -1,9 +1,10 @@
 # 基于SSM框架组合技术开发的科研管理系统
 (毕业设计)使用SSM框架组合技术开发科研管理系统
+
 大学毕业设计，使用SSM组合技术开发一个高校科研管理系统
 
-
-
+###### 已重构为springboot项目（springboot + mybatis） 地址：
+<https://github.com/IamDJJ/scientifit-management-system>
 
 
 ## 数据库设计
@@ -71,3 +72,23 @@
 统计系统中的相应的横向项目，纵向项目，知识产权等的统计
 
 1. 系统管理员是可以管理用户和用户所拥有的项目的
+
+-----
+
+2020.5.19
+
+项目更新，由于该项目过于久远，还是使用SSM和jdk1.6实现的。
+github出现错误警告了：
+Remediation
+Upgrade jquery to version 3.5.0 or later.
+
+
+所以这次重构项目，将其更新为spring boot + jsp + jdk 11，更改为maven管理
+重构的好处：
+1. 以前的SSM项目，需要tomcat容器承载，需要配置文件配置，看起来太笨重，部署起来也很笨重，完全不轻量化。
+2. spring boot的好处，自带tomcat，再也不用担心tomcat配置问题和tomcat版本问题而烦恼了，项目可以不重度依赖配置文件，注解化开发更方便项目查看。
+3. maven管理项目，可以更方便的注入依赖包，比如需要什么工具只需要在maven下载，省去很多繁琐的创建依赖过程。
+
+项目地址：
+<https://github.com/IamDJJ/scientifit-management-system>
+
