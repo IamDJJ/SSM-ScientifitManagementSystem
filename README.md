@@ -3,7 +3,7 @@
 
 大学毕业设计，使用SSM组合技术开发一个高校科研管理系统
 
-###### 已重构为springboot项目（springboot + mybatis） 地址：
+###### 计划重构为springboot项目（springboot + mybatis） 地址：
 <https://github.com/IamDJJ/scientifit-management-system>
 
 
